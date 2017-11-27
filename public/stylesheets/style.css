@@ -1,0 +1,57 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: purple;
+  color: white;
+}
+
+a {
+  color: #00B7FF;
+}
+
+
+.button {
+  font-family: Tahoma;
+  background-color: #19f3f3;
+  display: inline-block;
+  padding: 5px 25px;
+  font-size: 12px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #19f3f3;
+  background-color: #34373a;
+  border:  2px solid #19f3f3;
+  border-radius: 3px;
+  box-shadow: 0 1px black;
+
+}
+a:visited {
+  color: #f006d4;
+  text-decoration: none;
+}
+.button:hover {
+  background-color: #19f3f3;
+  color: #34373a;
+  -webkit-animation: bounce .3s infinite alternate;
+  -moz-animation: bounce .3s infinite alternate;
+  animation: bounce .3s infinite alternate;
+  animation-iteration-count:2;
+}
+@-webkit-keyframes bounce {
+  to { -webkit-transform: scale(1.2); }
+}
+@-moz-keyframes bounce {
+  to { -moz-transform: scale(1.2); }
+}
+@keyframes bounce {
+  to { transform: scale(1.2); }
+}
+}
+
+.button:active {
+  background-color: #19f3f3;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
